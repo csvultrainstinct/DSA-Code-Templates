@@ -4,10 +4,8 @@ using namespace std;
 
 bool CheckDFS(int i,vector<int>adj[],vector<int> &vis,int n){
     vector<int>dfsvis(n+1,0);
-    if(!vis[i]){
         vis[i]=1;
         dfsvis[i]=1;
-    }
     for(auto j:adj[i]){
         if(!vis[i]){
             vis[i]=1;
