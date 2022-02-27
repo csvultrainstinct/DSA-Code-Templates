@@ -5,6 +5,7 @@ using namespace std;
 vector<int> ShortestPath(int n,vector<pair<int,int>>adj[],int s){
     vector<int>dist(n+1,INT_MAX);
     priority_queue<pair<int,int>,vector<pair<int,int>>,greater<pair<int,int>> >pq;
+    dist[s]=0;
     pq.push({0,s});
     while(!pq.empty()){
         int tempdist=pq.top().first;
