@@ -32,7 +32,7 @@ int main()
         cin>>ins;
         val.push_back(ins);
     }
-    vector<vector<int>>dp(n+1,vector<int>(w,-1));
+    vector<vector<int>>dp(n+1,vector<int>(w+1,-1));
     cout<<Helper(n-1,w,wt,val,dp)<<endl;
     
     return 0;
