@@ -31,7 +31,7 @@ int main()
    for(auto i=1;i<=n;i++){
        for(auto j=1;j<=s/2;j++){
            if(a[i-1]<=j){
-               dp[i][j]=dp[i][j-a[i-1]]||dp[i-1][j];
+               dp[i][j]=dp[i-1][j-a[i-1]]||dp[i-1][j];
            }
            else{
                dp[i][j]=dp[i-1][j];
