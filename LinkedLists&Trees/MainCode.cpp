@@ -99,6 +99,8 @@ int main()
     
     inorder(root);
 
+    cout<<endl;
+     
     ListNode*head=NULL;
     for(auto i=0;i<n;i++){
         int data;
